@@ -13,20 +13,13 @@
 
   <div class="field">
     <%= form.label :email %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email, class: "block border border-grey-light w-full p-3 rounded mb-4"  %>
   </div>
 
   <div class="field">
     <%= form.label :password %>
-    <%= form.text_field :password %>
+    <%= form.text_field :password, class: "block border border-grey-light w-full p-3 rounded mb-4" %>
   </div>
 
-  <div class="field">
-    <%= form.label :username %>
-    <%= form.text_field :username %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <%= form.submit "Submit", class: "w-full text-center py-3 rounded bg-indigo-600 text-white hover:bg-green-dark focus:outline-none" %>
 <% end %>
